@@ -183,6 +183,11 @@ if(Character.isDigit(b.getKeyChar())){
                 btupdateMouseClicked(evt);
             }
         });
+        btupdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btupdateActionPerformed(evt);
+            }
+        });
 
         bthapus.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         bthapus.setText("Hapus");
@@ -273,13 +278,14 @@ if(Character.isDigit(b.getKeyChar())){
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bttambah)
-                    .addComponent(btsimpan)
-                    .addComponent(btupdate)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bthapus)
-                    .addComponent(btulang)
-                    .addComponent(jButton1))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(bttambah)
+                        .addComponent(btsimpan)
+                        .addComponent(btupdate)
+                        .addComponent(btulang)
+                        .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -492,6 +498,10 @@ if(Character.isDigit(b.getKeyChar())){
         // TODO add your handling code here:
         nomor.setText("+628");
     }//GEN-LAST:event_nomorMouseClicked
+
+    private void btupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btupdateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btupdateActionPerformed
 
 
     /**
